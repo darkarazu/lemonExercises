@@ -1,0 +1,45 @@
+@import "theming";
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.pallete-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    height: auto;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 16px 0;
+
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        margin: 0 10px;
+        border-radius: 50%;
+        border: solid 5px black;
+    }
+
+    .base-color {
+        width: 150px;
+        height: 150px;
+    }
+
+    .left {
+        border-radius: 50% 0 0 50%;
+    }
+    
+    .right {
+        border-radius: 0 50% 50% 0;
+    }
+
+}

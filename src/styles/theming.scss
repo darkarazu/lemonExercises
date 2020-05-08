@@ -1,0 +1,36 @@
+@import "common";
+
+$j: 1;
+$i: 1;
+
+@mixin createPallete($base-color, $pallete-number) {
+    .pallete-#{$pallete-number} {
+        font-weight: bold;
+        @for $i from 1 to 6 {
+            .darken-#{$i} {
+                $darkened: darken($base-color, ($i*8));
+                background-color: $darkened;
+                color: lighten($base-color, $i*20);
+            }
+
+            .lighten-#{$i} {
+                background-color: lighten($base-color, ($i*8));
+                color: darken($base-color, $i*20);
+            }
+
+            $i: $i+1;
+        }
+
+        .base-color {
+            background-color: $base-color;
+        }
+    }
+}
+
+@include createPallete($base-color1, 1);
+@include createPallete($base-color2, 2);
+@include createPallete($base-color3, 3);
+@include createPallete($base-color4, 4);
+@include createPallete($base-color5, 5);
+
+

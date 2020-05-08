@@ -1,0 +1,23 @@
+{
+  "name": "ejercicio1",
+  "version": "1.0.0",
+  "description": "Ejercicios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkarazu/lemonExercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darkarazu/lemonExercises/issues"
+  },
+  "homepage": "https://github.com/darkarazu/lemonExercises#readme",
+  "devDependencies": {
+    "sass": "^1.26.5"
+  }
+}

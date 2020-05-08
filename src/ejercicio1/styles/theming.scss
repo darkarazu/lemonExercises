@@ -8,8 +8,7 @@ $i: 1;
         font-weight: bold;
         @for $i from 1 to 6 {
             .darken-#{$i} {
-                $darkened: darken($base-color, ($i*8));
-                background-color: $darkened;
+                background-color: darken($base-color, ($i*8));
                 color: lighten($base-color, $i*20);
             }
 
@@ -17,8 +16,6 @@ $i: 1;
                 background-color: lighten($base-color, ($i*8));
                 color: darken($base-color, $i*20);
             }
-
-            $i: $i+1;
         }
 
         .base-color {
